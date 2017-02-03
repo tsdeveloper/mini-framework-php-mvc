@@ -1,0 +1,10 @@
+Route: / Controller: indexController Action:index View: index.phtml
+<br/>
+<?php //echo var_dump($this->views->listUsers)?><!--<!--;-->-->
+<?php foreach ($this->views->listUsers as $user): ?>
+    <hr><?php echo $user['id']?></hr>
+    <hr><?php echo $user['name']?></hr>
+    <hr><?php echo $user['email']?></hr>
+<?php endforeach?>
+
+
